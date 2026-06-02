@@ -1,0 +1,109 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Courier New', Courier, monospace;
+  background: #0a0a0a;
+  color: #e0e0e0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.container {
+  max-width: 680px;
+  width: 100%;
+}
+
+.tag {
+  display: inline-block;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 4px;
+  margin-bottom: 1.5rem;
+}
+
+.tag.red { background: #3d1010; color: #f87171; border: 1px solid #7f1d1d; }
+.tag.green { background: #0d2e1a; color: #4ade80; border: 1px solid #14532d; }
+.tag.yellow { background: #2e2000; color: #fbbf24; border: 1px solid #78350f; }
+
+h1 {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+h1 span { color: #4ade80; }
+
+.subtitle {
+  font-size: 15px;
+  color: #9ca3af;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+
+.clue-box {
+  background: #111;
+  border: 1px solid #2a2a2a;
+  border-radius: 8px;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.clue-box .clue-label {
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #6b7280;
+  margin-bottom: 8px;
+}
+
+.clue-box p {
+  font-size: 14px;
+  color: #d1d5db;
+  line-height: 1.7;
+}
+
+.clue-box code {
+  background: #1e1e1e;
+  color: #fbbf24;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-size: 13px;
+}
+
+.progress {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 2rem;
+}
+
+.progress-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #1f2937;
+  border: 1px solid #374151;
+}
+
+.progress-dot.done { background: #4ade80; border-color: #4ade80; }
+.progress-dot.current { background: #fbbf24; border-color: #fbbf24; }
+
+.divider {
+  border: none;
+  border-top: 1px solid #1f2937;
+  margin: 1.5rem 0;
+}
+
+.hint {
+  font-size: 13px;
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+.hint strong { color: #9ca3af; }
